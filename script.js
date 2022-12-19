@@ -9,12 +9,11 @@ function getRandomIntInclusive(min, max) {
  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
  function throwRandomError(errorRate) {
-   if (getRandomIntInclusive(0, 100) <= errorRate) {
+   if (getRandomIntInclusive(0, 20) <= errorRate) {
      throw new Error('Ой, что-то сломалось');
  }
 }
 
-let errorRate = +prompt('Введите вероятность выпада ошибки в процентах', 20)
 
  try {
 
