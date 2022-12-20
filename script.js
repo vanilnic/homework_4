@@ -11,7 +11,7 @@ function getRandomIntInclusive(min, max) {
  }
   function throwRandomError(errorRate) {
  
-   if (getRandomIntInclusive(0.0, 1.0) <= errorRate) {
+   if (getRandomIntInclusive(0, 1.0) <= errorRate) {
       throw new Error('Ой, что-то сломалось');
 }
 }
